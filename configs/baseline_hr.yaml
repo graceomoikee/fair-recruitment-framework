@@ -1,0 +1,18 @@
+# =========================
+# Baseline Experiment Config
+# =========================
+
+# Dataset configuration
+dataset_path: data/raw/HR_Analytics.csv
+label: Attrition              # Target variable (binary classification)
+protected: Gender             # Protected attribute for fairness evaluation
+
+# Reproducibility
+seed: 42                      # Random seed for deterministic results
+cv_folds: 5                   # Stratified cross-validation folds
+
+# Models to evaluate
+models:
+  - logreg                    # Logistic Regression (interpretable baseline)
+  - rf                        # Random Forest (non-linear model)
+  - gb                        # Gradient Boosting (higher-capacity model)

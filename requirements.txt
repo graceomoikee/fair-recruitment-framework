@@ -1,0 +1,8 @@
+numpy
+pandas
+scikit-learn
+fairlearn
+aif360
+shap
+matplotlib
+pyyaml
